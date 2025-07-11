@@ -4,7 +4,7 @@ Submitted by: **Louis Miguel Sabaricos**
 
 **FundMyGamePage** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -18,12 +18,16 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
   [x] Adjusted layout and elements for different screen sizes using Flexbox.
 * [x] Added hover effects on cards and stats for better interactivity.
+  [x] Integrated animated particle background using particles.js 
+  [x] Applied custom Google Fonts (Cabin and Rajdhani) for enhanced visual style
+  [x] Implemented scaling animation on game cards when hovered
+  [x] Styled buttons with custom colors and transitions for better UX
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="video/walkthrough.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -34,11 +38,11 @@ GIF created with ...
 
 ## Notes
 
-*Describe any challenges encountered while building the app.
-*Learning how to dynamically add content to the DOM using JavaScript
-*Filtering logic using filter() and displaying results
-*Adjusting layout with Flexbox for responsive UI
-*Fixing image path issues and JSON formatting
+Describe any challenges encountered while building the app.
+- Learning how to dynamically add content to the DOM using JavaScript
+- Filtering logic using filter() and displaying results
+- Adjusting layout with Flexbox for responsive UI
+- Fixing image path issues and JSON formatting
 
 
 ## License
