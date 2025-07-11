@@ -175,3 +175,57 @@ const secondGameElem = document.createElement("p");
 secondGameElem.innerText = secondGame.name;
 secondGameContainer.appendChild(secondGameElem);
 
+// Count funded vs unfunded games from GAMES_JSON
+const fundedChartCount = GAMES_JSON.filter(game => game.pledged >= game.goal).length;
+const unfundedChartCount = GAMES_JSON.filter(game => game.pledged < game.goal).length;
+
+// Get the canvas context
+const ctx = document.getElementById('fundedChart').getContext('2d');
+
+// Create the chart
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Funded Games', 'Unfunded Games'],
+        datasets: [{
+            label: '# of Games',
+            data: [fundedChartCount, unfundedChartCount],
+            backgroundColor: ['#00d1ff', '#ff4d4d'],
+            borderColor: ['#00a0cc', '#cc3333'],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    color: '#ffffff', // white text for dark backgrounds
+                    font: {
+                        weight: 'bold'
+                    }
+                }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                ticks: {
+                    color: '#ffffff'
+                },
+                grid: {
+                    color: 'rgba(255, 255, 255, 0.1)'
+                }
+            },
+            x: {
+                ticks: {
+                    color: '#ffffff'
+                },
+                grid: {
+                    color: 'rgba(255, 255, 255, 0.1)'
+                }
+            }
+        }
+    }
+});

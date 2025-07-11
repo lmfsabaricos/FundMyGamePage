@@ -7,6 +7,7 @@ body {
      -webkit-animation: fadeIn 1s ease-in;
 }
 
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -20,9 +21,27 @@ h1, h2, h3 {
     width: 50px;
 }
 
+.section-title, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #2dc7c7
+;
+  text-shadow: 0 0 10px rgba(0,255,255,0.3);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.section-title:hover, h2:hover {
+  transform: scale(1.03);
+  cursor: default;
+}
+
 .header {
     display: flex;
-    background-color: lightblue;
+    background-color: #2dc7c7;
+    color: rgb(0, 0, 0);
     padding: 1%;
     align-items: center;
     margin-left: -10px;
@@ -30,15 +49,29 @@ h1, h2, h3 {
     margin-top: -10px;
 }
 
+#chart-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
 #description-container {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     margin: 20px auto;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
     max-width: 800px;
-    box-shadow: 0 0 15px rgba(0, 209, 255, 0.3);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
     color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+#description-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
 }
 
 #description-container p {
@@ -91,10 +124,6 @@ h1, h2, h3 {
     text-align: center;
     border-radius: 7px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    -webkit-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    -moz-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    -ms-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .game-card:hover {
@@ -122,7 +151,7 @@ h1, h2, h3 {
   margin: 8px;
   border: none;
   border-radius: 8px;
-  background-color: #00d1ff;
+ background-color: #2dc7c7;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -133,13 +162,6 @@ h1, h2, h3 {
   background-color: #009ec3;
 }
 
-
-
-.game-card:hover {
-  transform: scale(1.05);
-  transition: 0.3s ease-in-out;
-}
-
 footer {
   color: #ccc;
   font-size: 0.9rem;
@@ -148,4 +170,33 @@ footer {
   opacity: 0.7;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 40px;
+}
+
+
+/* Mobile responsiveness  */
+@media (max-width: 768px) {
+  .stats-container,
+  #games-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .stats-card {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  #button-container button {
+    width: 80%;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
 }
