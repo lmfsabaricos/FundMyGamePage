@@ -27,14 +27,9 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src="video/walkthrough.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[Click here to view the walkthrough GIF](https://drive.google.com/file/d/1QIPqFhEDWpiQOBFSS56yn2X3XfpfSRj0/view?usp=sharing)
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+- GIF created with ScreenToGif
 
 ## Notes
 
