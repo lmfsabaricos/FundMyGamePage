@@ -18,18 +18,17 @@ The following **required** functionality is completed:
 * [x] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
-* [x] Adjusted layout and elements for different screen sizes using Flexbox.
-* [x] Added hover effects on cards and stats for better interactivity.
-* [x] Integrated animated particle background using particles.js 
-* [x] Applied custom Google Fonts (Cabin and Rajdhani) for enhanced visual style
-* [x] Implemented scaling animation on game cards when hovered
-* [x] Styled buttons with custom colors and transitions for better UX
+ * [x] Responsive layout with Flexbox
+ * [x] Interactive hover effects and animations
+ * [x] Chart.js bar graph for visual stats
+ * [x] Animated particle background (particles.js)
+ * [x] Custom fonts and polished color scheme for a modern look
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-[Click here to view the walkthrough GIF](https://drive.google.com/file/d/1QIPqFhEDWpiQOBFSS56yn2X3XfpfSRj0/view?usp=sharing)
+[Click here to view the walkthrough GIF](https://drive.google.com/file/d/1ZE1ok0Dw7U2AH6ldQZ-5DVCWA0Q7ZgHo/view?usp=sharing)
 
 - GIF created with ScreenToGif
 
